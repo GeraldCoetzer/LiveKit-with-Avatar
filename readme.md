@@ -42,7 +42,7 @@ python agent_worker.py dev
 python -m venv venv
 
 # Activate virtual environment
-.env\Scripts\Activate.ps1
+.\venv\Scripts\Activate.ps1
 
 # Install dependencies
 pip install -r requirements.txt
