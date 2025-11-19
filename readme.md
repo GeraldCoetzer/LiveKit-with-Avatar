@@ -1,55 +1,60 @@
-# Setup-Anleitung
+# Setup Guide
 
-Dieses Projekt verwendet Python mit einer virtuellen Umgebung.  
-Die folgenden Schritte beschreiben die Installation und Ausführung unter Linux/macOS und Windows.
+This project uses Python with a virtual environment.\
+The following steps describe installation and execution on Linux/macOS
+and Windows.
 
----
+------------------------------------------------------------------------
 
-## Voraussetzungen
-- Python 3.9 oder neuer
-- pip installiert
-- Git (optional, falls du das Repository klonst)
+## Requirements
 
----
+-   Python 3.9 or newer
+-   pip installed
+-   Git (optional, if you clone the repository)
 
-## Installation und Ausführung
+------------------------------------------------------------------------
+
+## Installation and Execution
 
 ### Linux / macOS
-```bash
-# Virtuelle Umgebung erstellen
+
+``` bash
+# Create virtual environment
 python3 -m venv venv
 
-# Virtuelle Umgebung aktivieren
+# Activate virtual environment
 source venv/bin/activate
 
-# Abhängigkeiten installieren
+# Install dependencies
 pip install -r requirements.txt
 
-# Starten
+# Start
 python agent_worker.py download-files
 
-# Final starten
+# Final start
 python agent_worker.py dev
+```
 
+### Windows
 
-
-FÜR WINDOWS:
-
-# Virtuelle Umgebung erstellen
+``` powershell
+# Create virtual environment
 python -m venv venv
 
-# Virtuelle Umgebung aktivieren
-.\venv\Scripts\Activate.ps1
+# Activate virtual environment
+.env\Scripts\Activate.ps1
 
-# Abhängigkeiten installieren
+# Install dependencies
 pip install -r requirements.txt
 
-# Starten
+# Start
 python agent_worker.py download-files
 
-# Final starten
+# Final start
 python agent_worker.py dev
+```
 
-# Go the browser to https://agents-playground.livekit.io/
-# select the folder with the files; in this case 
-# C:\GC\Argus\training\AI\course\LiveKit-mit-Avatar
+Go to the browser and open:\
+https://agents-playground.livekit.io/\
+Select the folder containing the files; for example:\
+C:\GC\Argus\training\AI\course\LiveKit-mit-Avatar
